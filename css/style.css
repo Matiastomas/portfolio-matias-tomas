@@ -1,0 +1,456 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Main container */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main section to take available space */
+.main {
+    flex: 1;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Initials */
+div.initials {
+    border: 3px solid #ffffff;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation menu */
+nav.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-left: 12px;
+    color: #ffffff;
+}
+
+/* Banner section */
+.banner-section {
+    width: 100%;
+    height: 676px;
+    background-color: #000000;
+    margin-top: 80px;
+    padding-top: 20px;
+}
+
+/* About and Contact container */
+.about-contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* About me section */
+.left-about-me {
+    width: 45%;
+}
+
+.left-about-me p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* Contact me section */
+.left-contact-me {
+    width: 45%;
+}
+
+.left-contact-me ol {
+    padding: 0;
+    margin: 0;
+}
+
+.left-contact-me li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Hover effect for links */
+ul li a:hover {
+    border-bottom: 4px solid #ffffff;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Color class */
+.color {
+    color: #ffffff;
+}
+
+/* Font size class */
+.font-size {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+/* Project card container */
+.project-card {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 97%;
+}
+
+/* Project card title */
+.project-card h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Project card description */
+.project-card p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Read more button */
+.project-card .btn {
+    display: inline-block;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-card .btn:hover {
+    background-color: #cccccc; /* Light gray background on hover */
+}
+
+h3 {
+    margin-top: 55px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+/* Remove list style */
+.remove-list-style {
+    list-style: none;
+}
+
+/* Mid container */
+.mid-container {
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+/* Headings with Playfair Display font */
+h1, h2 {
+    padding-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+/* Highlight name and larger font size */
+p strong {
+    font-size: 1.2em;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Body text with Roboto font */
+body, p, ul, li, label, input, textarea, form {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main content */
+.main-content {
+    width: 100%;
+    height: 930px;
+    margin-top: -30px;
+    padding-top: 30px;
+}
+
+/* Footer */
+footer {
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding: 40px;
+    margin-top: auto;
+}
+
+/* Footer alternative */
+#footer1 {
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding: 70px;
+    top: 0px;
+}
+
+/* Contact form */
+.contact-form {
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+/* Form elements */
+input[type="email"], input[type="button"], textarea, label {
+    display: block;
+}
+
+/* Email input */
+.input-email {
+    width: 80%;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+/* Form */
+form {
+    width: 60%;
+    margin-left: 190px;
+}
+
+/* Label */
+label {
+    margin-top: 7px;
+}
+
+/* Button style */
+.button-style {
+    margin-top: 10px;
+    background-color: #000000;
+    padding: 12px 30px;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+/* Textarea */
+textarea {
+    width: 80%;
+    border-width: 1px;
+    border-radius: 4px;
+    height: 250px;
+}
+
+/* Use relative units */
+body, p, ul, li, label, input, textarea, form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Base font size */
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+    /* Wrapper */
+    .wrapper {
+        padding-top: 80px;
+    }
+    
+    /* Main */
+    .main {
+        padding-top: 50px;
+    }
+    
+    /* Banner section */
+    .banner-section {
+        height: auto;
+        padding-top: 40px;
+    }
+    
+    /* Mid container */
+    .mid-container {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
+    /* Project card */
+    .project-card {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+    
+    .initials {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    
+    .menu ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    /* About me section */
+    .left-about-me, .left-contact-me {
+        width: 100%;
+        margin: 0;
+    }
+
+    .left-about-me p {
+        width: 100%;
+    }
+    
+    /* Contact me section */
+    .left-contact-me {
+        position: static;
+        margin-top: 20px;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 20px;
+    }
+}
+
+/* Media queries for extra small screens */
+@media only screen and (max-width: 480px) {
+    /* Project card title */
+    .project-card h4 {
+        font-size: 20px;
+    }
+
+    /* Project card description */
+    .project-card p {
+        font-size: 16px;
+    }
+
+    /* Read more button */
+    .project-card .btn {
+        padding: 8px 16px;
+    }
+    
+    /* Headings */
+    h1, h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+}
+
+/* Beyond the Code section */
+.beyond-the-code-section {
+    width: 100%;
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.beyond-the-code-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.beyond-the-code-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.activity-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-card img {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.activity-info {
+    text-align: left;
+}
+
+.activity-info h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.activity-info p {
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .activity-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .activity-card img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .activity-info h4 {
+        font-size: 20px;
+    }
+
+    .activity-info p {
+        font-size: 16px;
+    }
+}
